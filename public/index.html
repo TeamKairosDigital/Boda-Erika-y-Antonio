@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika & Antonio</title>
+    <!-- <link rel="shortcut icon" href="images/nombres.png" type="image/x-icon"> -->
+    <!-- PrimeFlex CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/primeflex@3.1.0/primeflex.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Modal con PrimeFlex -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content p-3">
+            <h2>Felicidades, has sido invitado a nuestra boda</h2>
+            <button id="startButton" style="background-color: var(--colorPrimario); color: #ffffff; border-radius: 20px;" class="px-3 py-2 mt-5 font-bold">Ingresar</button>
+        </div>
+    </div>
+
+    <div id="contenido" class="xl:w-8 xl:mx-auto fade hidden">
+        <!-- Botón flotante de reproducir/pausar -->
+        <div id="playButton"><i class="fa-solid fa-circle-pause"></i></div>
+
+        <!-- INTRO -->
+        <div class="relative justify-content-center text-center overflow-hidden">
+
+            <!-- Texto superpuesto -->
+            <div class="absolute z-2 w-full" style="top: 6rem;">
+                <div>
+                    <h2 class="mx-auto text-8xl font-normal line-height-1" style="font-family: var(--fuenteCursiva);" data-aos="zoom-out" data-aos-duration="800">
+                        Erika
+                    </h2>
+                    <h2 class="mx-auto text-6xl font-normal line-height-1 -mt-3" style="font-family: var(--fuenteCursiva);" data-aos="zoom-out" data-aos-duration="800">
+                        &
+                    </h2>
+                    <h2 class="mx-auto text-8xl font-normal line-height-1 -mt-3" style="font-family: var(--fuenteCursiva);" data-aos="zoom-out" data-aos-duration="800">
+                        Antonio
+                    </h2>
+                </div>
+                <div>
+                    <img src="images/icono1.png" alt="icono1" class="w-5rem">
+                </div>
+                <div class="my-4">
+                    <div data-aos="fade-right"  data-aos-duration="800">
+                        <h2 class="text-5xl lg:text-6xl font-normal line-height-1" style="font-family: var(--fuenteCursiva);">Nuestra Boda</h2>
+                    </div>
+                    <div class="flex justify-content-center mx-auto" style="color: var(--colorPrimario)">
+                        <p class="mr-2 text-2xl lg:text-5xl" data-aos="flip-up" data-aos-duration="800">25</p>
+                        <p class="text-2xl lg:text-5xl pleca" data-aos="flip-up" data-aos-duration="800">ENERO</p>
+                        <p class="ml-2 text-2xl lg:text-5xl" data-aos="flip-up" data-aos-duration="800">2025</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/icono1.png" alt="icono1" class="w-5rem">
+                </div>
+                <div class="w-7 mt-4 mx-auto" data-aos="fade-left"  data-aos-duration="800">
+                    <p class="text-sm lg:text-lg font-medium">
+                        “POR ENCIMA DE TODO, VÍSTANSE DE AMOR, QUE ES EL VÍNCULO PERFECTO.”<br><br>
+                        <b>COLOSENSES 3:14 NVI</b>
+                    </p>
+                </div>
+            </div>
+
+            <!-- imagenes de fondo -->
+            <div class="w-full grid">
+                <div class="col-12 grid h-20rem lg:h-15rem" style="text-align: left;">
+                    <div class="col-8" data-aos="fade-right"  data-aos-duration="800">
+                        <img src="images/puntos.png" class="absolute w-5rem lg:w-10rem top-50 -ml-5" alt="puntos">
+                        <img src="images/watercolor.png" class="absolute w-19rem lg:w-30rem -mt-3" style="rotate: 180deg;" alt="watercolor">
+                        <img src="images/flores1.png" class="absolute w-14rem lg:w-30rem" alt="flores1">
+                    </div>
+                    <div class="col-4" style="text-align: right;" data-aos="fade-left" data-aos-duration="800">
+                        <img src="images/rayon1.png" class="w-14rem lg:w-25rem -ml-8 lg:ml-0" alt="rayon1">
+                    </div>
+                </div>
+                <div class="col-12 h-17rem grid lg:h-30rem">
+                    <div class="col-8"></div>
+                    <div class="col-4" data-aos="fade-left" data-aos-duration="800" style="text-align: right;">
+                        <img src="images/puntos2.png" class="w-6rem lg:w-10rem mt-7" alt="puntos2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PADRES -->
+        <div class="py-7 mt-3 justify-content-center text-center overflow-hidden" style="background-color: var(--colorPrimario);">
+            <div>
+                <div data-aos="fade-left"  data-aos-duration="800">
+                    <p class="text-3xl font-normal line-height-1" style="color: var(--colorBlanco); letter-spacing: .4rem;">PADRES</p>
+                    <p class="text-6xl font-normal" style="color: var(--colorBlanco); font-family: var(--fuenteCursiva);">de la Novia</p>
+                </div>
+                <div class="mt-2" data-aos="fade-right"  data-aos-duration="800">
+                    <p class="" style="color: var(--colorBlanco);">JUAN PABLO LORENA HERNÁNDEZ</p>
+                    <p class="" style="color: var(--colorBlanco);">PATRICIA DE LA CRUZ ANZA</p>
+                </div>
+            </div>
+            <div class="my-7" data-aos="zoom-in" data-aos-duration="800">
+                <img src="images/icono2.png" alt="icono1" class="w-5rem">
+            </div>
+            <div>
+                <div data-aos="fade-left"  data-aos-duration="800">
+                    <p class="text-3xl font-normal line-height-1" style="color: var(--colorBlanco); letter-spacing: .4rem;">PADRES</p>
+                    <p class="text-6xl font-normal" style="color: var(--colorBlanco); font-family: var(--fuenteCursiva);">del Novio</p>
+                </div>
+                <div class="mt-2" data-aos="fade-right"  data-aos-duration="800">
+                    <p class="" style="color: var(--colorBlanco);">ANTONIO CANDELARIO SOTO</p>
+                    <p class="" style="color: var(--colorBlanco);">CARMEN SAN JUAN CONDADO</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FECHA, LUGAR Y HORA -->
+        <div class="relative justify-content-center text-center overflow-hidden">
+
+            <!-- Texto superpuesto -->
+            <div class="absolute z-2 w-full" style="top: 5rem;">
+                <div class="mt-4">
+                    <div data-aos="zoom-in-down" data-aos-duration="800">
+                        <img src="images/calendario.png" alt="calendario" class="w-2 lg:w-1 mb-4">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <h2 class="text-5xl font-normal line-height-1" style="font-family: var(--fuenteCursiva);">Fecha:</h2>
+                    </div>
+                    <div class="flex justify-content-center mx-auto" style="color: var(--colorPrimario)">
+                        <p class="mr-2 text-2xl lg:text-5xl" data-aos="flip-up" data-aos-duration="800">25</p>
+                        <p class="text-2xl lg:text-5xl pleca" data-aos="flip-up" data-aos-duration="800">ENERO</p>
+                        <p class="ml-2 text-2xl lg:text-5xl" data-aos="flip-up" data-aos-duration="800">2025</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <img src="images/icono1.png" alt="icono1" class="w-5rem lg:w-7rem mt-3">
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <div data-aos="zoom-in-down" data-aos-duration="800">
+                        <img src="images/ubicacion.png" alt="ubicacion" class="w-1 lg:w-1 mb-4">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <h2 class="text-5xl font-normal" style="font-family: var(--fuenteCursiva);">Lugar:</h2>
+                    </div>
+                    <div class="w-8 mt-2 mx-auto" data-aos="flip-up" data-aos-duration="800">
+                        <p class="font-italic font-bold lg:text-xl">SALÓN FROGGY’S</p>
+                        <p class="lg:text-xl" style="letter-spacing: .1rem;">
+                            CLZD. ROSARIO SABINAL #417, TERÁN. TUXTLA GTZ. CHIAPAS.
+                        </p>
+                    </div>
+                    <div class="my-3" data-aos="zoom-in-up" data-aos-duration="800">
+                        <a href="https://maps.app.goo.gl/4qqudVWVQnrVdKR57" style="background-color: var(--colorPrimario); color: var(--colorBlanco); text-decoration: none; border-radius: 20px;" class="px-5 py-2 font-bold uppercase">Ver ubicación</a>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <img src="images/icono1.png" alt="icono1" class="w-5rem lg:w-7rem mt-2">
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <div data-aos="zoom-in-down" data-aos-duration="800">
+                        <img src="images/reloj.png" alt="reloj" class="w-2 lg:w-1 mb-4">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <h2 class="text-5xl font-normal" style="font-family: var(--fuenteCursiva);">Hora:</h2>
+                    </div>
+                    <div class="w-8 mt-2 mx-auto">
+                        <p class="text-2xl lg:text-5xl" data-aos="flip-up" data-aos-duration="800">07:00 PM</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <img src="images/icono1.png" alt="icono1" class="w-5rem lg:w-7rem mt-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- imagenes de fondo -->
+            <div class="w-full grid">
+                <div class="col-12 grid h-18rem sm:h-25rem md:h-30rem lg:h-20rem" style="text-align: left;">
+                    <div class="col-8" data-aos="fade-right"  data-aos-duration="800">
+                        <img src="images/puntos.png" class="w-5rem lg:w-10rem" alt="Flor de fondo">
+                    </div>
+                    <div class="col-4" style="text-align: right;" data-aos="fade-left" data-aos-duration="800">
+                        <img src="images/rayon1.png" class="w-10rem lg:w-25rem" alt="Pincelada de fondo">
+                    </div>
+                </div>
+                <div class="col-12 h-20rem lg:10rem grid lg:h-30rem">
+                    <div class="col-8"></div>
+                    <div class="col-4" style="text-align: right;" data-aos="fade-left" data-aos-duration="800">
+                        <img src="images/puntos2.png" class="w-5rem lg:w-10rem" alt="Pincelada de fondo">
+                    </div>
+                </div>
+                <div class="col-12 h-20rem lg:10rem grid lg:h-30rem">
+                    <div class="col-4" style="text-align: left;" data-aos="fade-right" data-aos-duration="800">
+                        <img src="images/puntos.png" class="w-6rem lg:w-10rem mt-7" alt="hojas doradas de fondo">
+                    </div>
+                    <div class="col-8"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- REGALOS -->
+        <div class="py-3 mt-4 justify-content-center text-center overflow-hidden" style="background-color: var(--colorPrimario);">
+            <div>
+                <div class="w-8 mx-auto" data-aos="zoom-in" data-aos-duration="800">
+                    <h2 class="text-5xl font-normal" style="color: var(--colorBlanco); font-family: var(--fuenteCursiva);">Regalos:</h2>
+                    <p class="text-sm lg:text-xl font-normal my-3" style="color: var(--colorBlanco);">Su presencia en nuestra boda será el mejor regalo. Pero si desean darnos otro obsequio, les agradeceremos su depósito en nuestra cuenta bancaria.</p>
+                </div>
+                <div class="mt-2" data-aos="zoom-in" data-aos-duration="800">
+                    <p class="font-semibold lg:text-xl" style="color: var(--colorBlanco);">Banorte:</p>
+                    <p class="lg:text-xl" style="color: var(--colorBlanco);">4915 6694 1655 6080</p>
+                </div>
+            </div>
+            <div data-aos="zoom-out" data-aos-duration="800">
+                <img src="images/tarjeta.png" alt="icono1" class="w-5rem lg:w-8rem">
+            </div>
+            <!-- Cuenta regresiva -->
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-duration="800">
+                <p class="text-5xl lg:text-5xl mx-auto" style="color: var(--colorBlanco); font-family: var(--fuenteCursiva);">Faltan:</p>
+                <div id="cuenta"></div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="relative justify-content-center text-center overflow-hidden">
+
+            <!-- Texto superpuesto -->
+            <div class="absolute z-2 w-full">
+                <div class="mt-5">
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <h2 class="text-5xl font-normal" style="font-family: var(--fuenteCursiva);">Acompañanos</h2>
+                    </div>
+                    <div class="w-8 mx-auto" data-aos="fade-up" data-aos-duration="800">
+                        <p class="lg:text-xl" style="letter-spacing: .1rem;">¡NOS ENCATARÁ CONTAR CON TU PRESENCIA!</p>
+                    </div>
+                    <div class="my-4" data-aos="zoom-in-up" data-aos-duration="800">
+                        <a href="https://wa.me/+529611983460?text=Hola, Quiero confirmar mi asistencia" style="background-color: var(--colorPrimario); color: var(--colorBlanco); text-decoration: none; border-radius: 20px;" class="px-3 py-2 font-bold uppercase">confirmar asistencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full grid h-25rem flex-grow">
+                <div class="col-12 grid lg:h-30rem" style="text-align: left;">
+                    <div class="col-4 flex align-items-end" data-aos="fade-right" data-aos-duration="800">
+                        <img src="images/puntos.png" class="w-6rem lg:w-11rem" alt="Flor de fondo">
+                    </div>
+                    <div class="col-8 flex justify-content-end align-items-end lg:align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <img src="images/watercolor.png" class="absolute w-18rem lg:w-20rem" alt="Pincelada de fondo">
+                        <img src="images/flores2.png" class="absolute w-14rem lg:w-20rem" alt="Flores de fondo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- Música de fondo -->
+    <audio id="background-music" preload="auto" loop>
+        <source src="assets/Thinking_Out_Loud_Violin_and_Piano_Cover_Daniel_Jang.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- cuenta regresiva -->
+    <script src="js/simplyCountdown.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
